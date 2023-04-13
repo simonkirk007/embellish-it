@@ -1,2 +1,2 @@
-# embellish-it
+# Embellish It
 https://embellish-it.com/
