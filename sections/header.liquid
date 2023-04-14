@@ -63,25 +63,43 @@
                     <div class="col-md-10">
 
                         <div class="main-hdr-con">
-                          {%- if section.settings.menu != blank -%}
-                          {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-                      <div class="nav-menu">
 
-                          <ul>
-                              {%- for link in section.settings.menu.links -%}
-                              <li>
-                                
-                                  <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-                                
-                                  
-                                </li>
-                              {%- endfor -%}                            
-                          </ul>
+                        {%- if section.settings.menu != blank -%}
+  {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+    <div class="nav-menu">
+      <ul>
+        {%- for link in section.settings.menu.links -%}
+          <li>
+            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
+            {% if link.links %}
+              <ul>
+                {% for sublink in link.links %}
+                  <li>
+                    <a href="{{ sublink.url }}">{{ sublink.title | escape }}</a>
+                    {% if sublink.links %}
+                      <i class="fal fa-caret-right"></i>
+                      <ul class="sub-menu sub-sub-menu">
+                        {% for subsublink in sublink.links %}
+                          <li>
+                            <a href="{{ subsublink.url }}">{{ subsublink.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {%- endfor -%}                            
+      </ul>
+    </div>
+  {%- endif -%}
+{%- endif -%}
 
-                      </div>
 
-                    {%- endif -%}
-                  {%- endif -%}  
+                         
+
                         </div>
                         <div class="main-hdr-con">
                           
