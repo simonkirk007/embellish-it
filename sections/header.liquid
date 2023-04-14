@@ -62,6 +62,26 @@
                     </div>
                     <div class="col-md-10">
                         <div class="main-hdr-con">
+                          {%- if section.settings.menu != blank -%}
+                            {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                        <div class="nav-menu">
+
+                            <ul>
+                                {%- for link in section.settings.menu.links -%}
+                                <li>
+                                  
+                                    <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
+                                  
+                                    
+                                  </li>
+                                {%- endfor -%}                            
+                            </ul>
+
+                        </div>
+
+                      {%- endif -%}
+                    {%- endif -%}
+                    
                             <div class="nav-menu">
                                 <ul>
                                     <li><a class="<?php if($active and $active=='home'){echo 'active';}?>"
