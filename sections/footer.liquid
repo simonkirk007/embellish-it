@@ -18,7 +18,6 @@
               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
               <img src="{{ settings.logo | img_url: 'master' }}" alt="Logo" />
-              
             </a>
           {%- else -%}
             <span class="h2">{{ shop.name }}</span>
