@@ -12,3 +12,23 @@ form.search.search-modal__form.hdr
 form.search.search-modal__form.hdr label.field__label {
     display: none;
 }
+
+.newsletter-form .footer__nav input:focus {
+    width: 100%;
+    height: 55px;
+    border: 0;
+    padding-left: 21px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 30px;
+}
+.newsletter-form .newsletter-form__field-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+form#ContactFooter {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
