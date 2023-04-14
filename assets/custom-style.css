@@ -32,3 +32,11 @@ form#ContactFooter {
     margin: 0;
     max-width: 100%;
 }
+
+.newsletter-form .footer__nav input::placeholder {
+    opacity: 1;
+}
+
+.newsletter-form .footer__nav input {
+    padding: 0 20px !important;
+}
