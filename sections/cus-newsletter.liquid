@@ -1,0 +1,78 @@
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="news-content w-75 text-center m-auto">
+                    <h2>Multi-layered designs made with the highest quality machine cut rhinestones and HTV patterns
+                    </h2>
+                    <h6>Start You’r Daily Shopping <span>With Us</span></h6>
+
+                    <form action="" class="newsletter-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Enter your first name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Your email address">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="news-btn">
+                                    <a class="btn btn-1 w-100" href="#">Subscribe</a>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="left-image size">
+        <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="">
+    </div>
+    <div class="right-image size">
+        <img src="{{ section.settings.image_2  | img_url: 'master' }}" alt="">
+    </div>
+</section>
+
+{% schema %}
+    {
+      "name": "Cus Newsletter",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "default": "Collections",
+          "label": "Sub Heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "default": "<p>Collections</p>",
+          "label": "Content"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Cus Newsletter"
+        }
+      ]
+    }
+    {% endschema %}
