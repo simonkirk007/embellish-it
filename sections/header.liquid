@@ -61,26 +61,30 @@
                         </div>
                     </div>
                     <div class="col-md-10">
+
                         <div class="main-hdr-con">
                           {%- if section.settings.menu != blank -%}
-                            {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-                        <div class="nav-menu">
+                          {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                      <div class="nav-menu">
 
-                            <ul>
-                                {%- for link in section.settings.menu.links -%}
-                                <li>
+                          <ul>
+                              {%- for link in section.settings.menu.links -%}
+                              <li>
+                                
+                                  <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
+                                
                                   
-                                    <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-                                  
-                                    
-                                  </li>
-                                {%- endfor -%}                            
-                            </ul>
+                                </li>
+                              {%- endfor -%}                            
+                          </ul>
 
-                        </div>
+                      </div>
 
-                      {%- endif -%}
                     {%- endif -%}
+                  {%- endif -%}  
+                        </div>
+                        <div class="main-hdr-con">
+                          
                     
                             <div class="nav-menu">
                                 <ul>
