@@ -1,0 +1,14 @@
+form.search.search-modal__form.hdr .search__input.field__input {
+    padding: 0;
+    padding-right: 40px;
+}
+
+form.search.search-modal__form.hdr 
+ button.search__button.field__button {
+    top: 0;
+    height: 24px;
+}
+
+form.search.search-modal__form.hdr label.field__label {
+    display: none;
+}
