@@ -71,7 +71,7 @@
         {%- for link in section.settings.menu.links -%}
           <li>
             <a class="" href="{{ link.url }}">{{ link.title | escape }} {% if link.links and link.links != blank %}
-              <i class="fal fa-caret-right"></i> {% endif %}</a>
+              <i class="fal fal fa-caret-down"></i> {% endif %}</a>
             {% if link.links and link.links != blank %}
              
               <ul class="sub-menu">
