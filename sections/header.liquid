@@ -71,13 +71,13 @@
         {%- for link in section.settings.menu.links -%}
           <li>
             <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-            {% if link.links %}
+            {% if link.links and link.links != blank %}
               <i class="fal fa-caret-right"></i>
               <ul class="sub-menu">
                 {% for sublink in link.links %}
                   <li>
                     <a href="{{ sublink.url }}">{{ sublink.title | escape }}</a>
-                    {% if sublink.links %}
+                    {% if sublink.links and sublink.links != blank %}
                       <i class="fal fa-caret-right"></i>
                       <ul class="sub-menu sub-sub-menu">
                         {% for subsublink in sublink.links %}
@@ -97,6 +97,7 @@
     </div>
   {%- endif -%}
 {%- endif -%}
+
 
 
                          
