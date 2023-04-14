@@ -50,3 +50,9 @@ form#ContactFooter input::placeholder {
 form#ContactFooter .field__label {
     display: none;
 }
+
+section.newsletter form.newsletter-form {
+    margin: 0;
+    max-width: 100%;
+    display: block;
+}
