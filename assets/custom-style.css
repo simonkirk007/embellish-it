@@ -18,9 +18,10 @@ form#ContactFooter input:focus {
     height: 55px;
     border: 0;
     padding-left: 21px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     position: relative;
     border-radius: 30px !important;
+    padding: 10px 15px !important;
 }
 .newsletter-form .newsletter-form__field-wrapper {
     width: 100% !important;
