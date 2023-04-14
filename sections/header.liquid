@@ -72,7 +72,8 @@
           <li>
             <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
             {% if link.links %}
-              <ul>
+                <i class="fal fa-caret-right"></i>
+                <ul class="sub-menu sub-sub-menu">
                 {% for sublink in link.links %}
                   <li>
                     <a href="{{ sublink.url }}">{{ sublink.title | escape }}</a>
