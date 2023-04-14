@@ -20,7 +20,7 @@ form.search.search-modal__form.hdr label.field__label {
     padding-left: 21px;
     margin-bottom: 20px;
     position: relative;
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 .newsletter-form .newsletter-form__field-wrapper {
     width: 100% !important;
@@ -37,6 +37,9 @@ form#ContactFooter {
     opacity: 1;
 }
 
+.newsletter-form .footer__nav .field__label {
+    display: none;
+}
 .newsletter-form .footer__nav input {
     padding: 0 20px !important;
 }
