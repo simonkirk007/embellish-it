@@ -17,10 +17,21 @@
         "link_title": "Collections",
         "link_url": ""
       }
+    },
+    "f2ef5218-cf24-4c00-8d72-53c845898069": {
+      "type": "cus-newsletter",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/news-img-2.png",
+        "image_2": "shopify:\/\/shop_images\/news-img-1.png",
+        "sub_heading": "Collections",
+        "title": "Collections",
+        "content": "<p>Collections<\/p>"
+      }
     }
   },
   "order": [
     "1070ee35-cfd7-4d71-8cb9-f9e773c7a6a2",
-    "a4dc0cf1-43a2-46ef-9c84-530d20a4e94d"
+    "a4dc0cf1-43a2-46ef-9c84-530d20a4e94d",
+    "f2ef5218-cf24-4c00-8d72-53c845898069"
   ]
 }
