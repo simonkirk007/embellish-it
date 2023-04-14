@@ -1,0 +1,104 @@
+<section class="product">
+    <div class="container">
+        <div class="title ">
+            <h3>Featured Products</h3>
+        </div>
+        <div class="row">
+
+        {% assign selected_collection = section.settings.collection %}
+        {% for product in collections[selected_collection].products %}
+            
+            <div class="col-md-3">
+                <div class="product-item">
+                    <div class="product-inner-item">
+                        <a href="productdetail.php">
+                            <img src="assets/images/products/1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3><a href="productdetail.php"> DST Charm Necklace</a></h3>
+                        <div class="inner-content">
+                            <div class="rating">
+                                <div class="price">
+                                    <h5>$30.99 USD</h5>
+
+                                </div>
+                                <div class="varition-btn m-0 mt-3  d-flex">
+                                    <ul class="color-variation">
+                                        <li>
+                                            <input type="radio" name="color" id="FAB528">
+                                            <label for="FAB528" style="background-color:#FAB528;"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="color" id="FC043A">
+                                            <label for="FC043A" style="background-color:#FC043A;"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="color" id="223F9A">
+                                            <label for="223F9A" style="background-color:#223F9A;"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="color" id="D9D9D9">
+                                            <label for="D9D9D9" style="background-color:#D9D9D9;"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="color" id="044343">
+                                            <label for="044343" style="background-color:#044343;"></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="color" id="222222">
+                                            <label for="222222" style="background-color:#222222;"></label>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+            
+ 
+            
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+      "name": "Cus Product Loop",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.featured-collection.settings.collection.label"
+        },
+        {
+          "type": "text",
+          "id": "link_title",
+          "default": "Collections",
+          "label": "Button Title"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Button URL"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Cus Product Loop"
+        }
+      ]
+    }
+    {% endschema %}
