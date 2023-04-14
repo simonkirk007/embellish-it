@@ -13,12 +13,15 @@ form.search.search-modal__form.hdr label.field__label {
     display: none;
 }
 
+form#ContactFooter inputA {
+    margin-bottom: 0px !important;
+}
 form#ContactFooter input:focus {
     width: 100%;
     height: 55px;
     border: 0;
     padding-left: 21px;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
     position: relative;
     border-radius: 30px !important;
     padding: 10px 15px !important;
