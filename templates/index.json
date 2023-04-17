@@ -40,10 +40,63 @@
     "444cae8b-ff20-4067-aeb5-e7765076e1c9": {
       "type": "cus-products-pop",
       "settings": {
-        "title": "Collections",
-        "collection": "",
-        "link_title": "Collections",
-        "link_url": ""
+        "title": "collections",
+        "link_title": "Collections"
+      }
+    },
+    "314ae5f8-e007-4cf2-a713-3da73adb98db": {
+      "type": "cus-products-pop",
+      "blocks": {
+        "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p-pro-img-1.png",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
+            "product_url": ""
+          }
+        },
+        "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p-pro-img-2.png",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
+            "product_url": ""
+          }
+        },
+        "5af354d6-4d5f-42ad-ac72-a75ac6d99521": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p-pro-img-3.png",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
+            "product_url": ""
+          }
+        },
+        "22830e0a-b69f-4c40-8500-1403593ccc60": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p-pro-img-4.png",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
+            "product_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-0",
+        "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-1",
+        "5af354d6-4d5f-42ad-ac72-a75ac6d99521",
+        "22830e0a-b69f-4c40-8500-1403593ccc60"
+      ],
+      "settings": {
+        "title": "",
+        "link_title": "Collections"
       }
     }
   },
@@ -52,6 +105,7 @@
     "a4dc0cf1-43a2-46ef-9c84-530d20a4e94d",
     "f2ef5218-cf24-4c00-8d72-53c845898069",
     "9e7c61af-90f6-4d92-aefe-5ee00f453506",
-    "444cae8b-ff20-4067-aeb5-e7765076e1c9"
+    "444cae8b-ff20-4067-aeb5-e7765076e1c9",
+    "314ae5f8-e007-4cf2-a713-3da73adb98db"
   ]
 }
