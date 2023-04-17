@@ -1779,3 +1779,8 @@ ul.color-variation input:checked + label {
 .newsletter-form__button {
   height: 55px !important;
 }
+
+.page-width {
+  max-width: 1320px;
+  padding: 0 15px;
+}
