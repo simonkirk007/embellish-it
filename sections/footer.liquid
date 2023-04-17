@@ -27,11 +27,22 @@
           <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
           <div class="social-icon">
             <ul class="footer-info__social">
+              
+              {%- if settings.social_instagram_link != blank -%}
               <li>
-                <a href="#">
+                <a href="{{ settings.social_instagram_link }}" target="_blank" rel="noopener" aria-label="{{ 'layout.footer.social.instagram' | t }}">
                   <i class="bx bxl-instagram-alt"></i>
                 </a>
               </li>
+              {%- endif -%}
+              {%- if settings.social_tiktok_link != blank -%}
+              <li>
+                <a href="{{ settings.social_tiktok_link }}" target="_blank" rel="noopener" aria-label="{{ 'layout.footer.social.tiktok' | t }}">
+                  <i class="bx bxl-tiktok"></i>
+                </a>
+              </li>
+              {%- endif -%}
+
               <li>
                 <a href="#">
                   <i class="bx bxl-tiktok"></i>
