@@ -107,3 +107,7 @@ body.product {
 .newsletter-form input::placeholder {
     opacity: 1;
 }
+.news-btn button {
+    border-radius: 30px;
+    padding: 18px 0;
+}
