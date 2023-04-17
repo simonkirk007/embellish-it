@@ -1,75 +1,74 @@
 <section class="product">
-    <div class="container">
-        <div class="title ">
-            <h3>{{ section.settings.title | escape }}</h3>
-        </div>
-        <div class="row">
-
-        {% assign selected_collection = section.settings.collection %}
-        {% for product in collections[selected_collection].products %}
-            
-            <div class="col-md-3">
-                <div class="product-item">
-                    <div class="product-inner-item">
-                        <a href="{{ product.url }}">
-                            <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
-                        <div class="inner-content">
-                            <div class="rating">
-                                <div class="price">
-                                    <h5>{{ product.price | money }}</h5>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-            
- 
-            
-        </div>
+  <div class="container">
+    <div class="title ">
+      <h3>{{ section.settings.title | escape }}</h3>
     </div>
+    <div class="row">
+
+      {% assign selected_collection = section.settings.collection %}
+      {% for product in collections[selected_collection].products %}
+
+        <div class="col-md-3">
+          <div class="product-item">
+            <div class="product-inner-item">
+              <a href="{{ product.url }}">
+                <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
+              </a>
+            </div>
+            <div class="product-content">
+              <h3>
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </h3>
+              <div class="inner-content">
+                <div class="rating">
+                  <div class="price">
+                    <h5>{{ product.price | money }} USD</h5>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+
+
+    </div>
+  </div>
 </section>
 
 {% schema %}
-    {
-      "name": "Cus Product Loop",
-      "tag": "section",
-      "class": "announcement-bar-section",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "default": "Collections",
-          "label": "Title"
-        },
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "t:sections.featured-collection.settings.collection.label"
-        },
-        {
-          "type": "text",
-          "id": "link_title",
-          "default": "Collections",
-          "label": "Button Title"
-        },
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Button URL"
-        }
+  {
+    "name": "Cus Product Loop",
+    "tag": "section",
+    "class": "announcement-bar-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Collections",
+        "label": "Title"
+      }, {
+        "type": "collection",
+        "id": "collection",
+        "label": "t:sections.featured-collection.settings.collection.label"
+      }, {
+        "type": "text",
+        "id": "link_title",
+        "default": "Collections",
+        "label": "Button Title"
+      }, {
+        "type": "url",
+        "id": "link_url",
+        "label": "Button URL"
+      }
     ],
     "presets": [
-        {
-          "name": "Cus Product Loop"
-        }
-      ]
-    }
-    {% endschema %}
+      {
+        "name": "Cus Product Loop"
+      }
+    ]
+  }
+{% endschema %}
