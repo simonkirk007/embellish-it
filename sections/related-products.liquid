@@ -26,11 +26,11 @@
         {{ section.settings.heading }}
       </h2>
       <ul
-        class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
+        class="products"
         role="list"
       >
         {% for recommendation in recommendations.products %}
-          <li class="grid__item">
+          <div class="row">
             {% render 'card-product',
               card_product: recommendation,
               media_aspect_ratio: section.settings.image_ratio,
@@ -38,7 +38,7 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating
             %}
-          </li>
+          </div>
         {% endfor %}
       </ul>
     {% endif %}
