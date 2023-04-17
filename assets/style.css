@@ -1775,3 +1775,7 @@ ul.color-variation input:checked + label {
 .image-with-text__text p {
   font-size: 18px;
 }
+
+.newsletter-form__button {
+  height: 55px;
+}
