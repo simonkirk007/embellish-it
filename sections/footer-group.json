@@ -1,1 +1,34 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","settings":{"color_scheme":"background-1","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":false,"margin_top":36,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "634c72f2-e3e7-44e0-a9ec-b6a15c025624": {
+          "type": "column",
+          "settings": {
+            "title": "Quick Links",
+            "footer_menu": "footer"
+          }
+        },
+        "7e7bc400-0b30-4014-9c3e-f9bf9b1775b8": {
+          "type": "column",
+          "settings": {
+            "title": "Useful Links",
+            "footer_menu": "footer-menu-right"
+          }
+        }
+      },
+      "block_order": [
+        "634c72f2-e3e7-44e0-a9ec-b6a15c025624",
+        "7e7bc400-0b30-4014-9c3e-f9bf9b1775b8"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
