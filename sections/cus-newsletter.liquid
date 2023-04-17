@@ -27,8 +27,30 @@
                         type="hidden"
                         name="contact[tags]"
                         value="newsletter">
-                      <div class="newsletter-form__field-wrapper">
-                        <div class="field">
+                      <div class="row">
+
+                        <div class="col-md-6"> <!-- Add a new field for the customer's name -->
+                          <input
+                            id="Name--{{ section.id }}"
+                            type="text"
+                            name="contact[name]"
+                            class="field__input"
+                            value="{{ form.name }}"
+                            aria-required="true"
+                            autocorrect="off"
+                            autocapitalize="off"
+                            autocomplete="name"
+                            {% if form.errors %}
+                            autofocus
+                            aria-invalid="true"
+                            aria-describedby="ContactFooter-error"
+                            {% endif %}
+                            placeholder="Your email address"
+                            required>
+
+                        </div>
+
+                        <div class="col-md-6">
                           <input
                             id="NewsletterForm--{{ section.id }}"
                             type="email"
@@ -46,42 +68,22 @@
                             {% elsif form.posted_successfully? %}
                             aria-describedby="ContactFooter-success"
                             {% endif %}
-                            placeholder="{{ 'newsletter.label' | t }}"
+                            placeholder="Enter your first name"
                             required>
-                          <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                            {{ 'newsletter.label' | t }}
-                          </label>
+                   
                         </div>
-                        <div class="field"> <!-- Add a new field for the customer's name -->
-                          <input
-                            id="Name--{{ section.id }}"
-                            type="text"
-                            name="contact[name]"
-                            class="field__input"
-                            value="{{ form.name }}"
-                            aria-required="true"
-                            autocorrect="off"
-                            autocapitalize="off"
-                            autocomplete="name"
-                            {% if form.errors %}
-                            autofocus
-                            aria-invalid="true"
-                            aria-describedby="ContactFooter-error"
-                            {% endif %}
-                            placeholder="{{ 'newsletter.name' | t }}"
-                            required>
-                          <label class="field__label" for="Name--{{ section.id }}">
-                            {{ 'newsletter.name' | t }}
-                          </label>
+                        
+                        <div class="col-md-12">
+                          <button
+                            type="submit"
+                            class="btn btn-1 w-100"
+                            name="commit"
+                            id="Subscribe"
+                            aria-label="{{ 'newsletter.button_label' | t }}">
+                            Subscribe
+                          </button>
                         </div>
-                        <button
-                          type="submit"
-                          class="newsletter-form__button field__button"
-                          name="commit"
-                          id="Subscribe"
-                          aria-label="{{ 'newsletter.button_label' | t }}">
-                          {% render 'icon-arrow' %}
-                        </button>
+                        
                       </div>
                       {%- if form.errors -%}
                         <small class="newsletter-form__message form__message" id="ContactFooter-error">
