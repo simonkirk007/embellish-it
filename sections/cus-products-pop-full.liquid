@@ -1,0 +1,208 @@
+<section class="popular-product popular-product-full">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-5.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-6.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-7.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-8.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-9.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-10.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Cus Product POP Full",
+    "tag": "section",
+    "class": "announcement-bar-section",
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_product",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Collections",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "price_regular",
+            "default": "Collections",
+            "label": "Price Regular"
+          },
+          {
+            "type": "text",
+            "id": "price_sale",
+            "default": "Collections",
+            "label": "Price Sale"
+          }, {
+            "type": "url",
+            "id": "product_url",
+            "label": "Price Link"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "link_title",
+        "default": "Collections",
+        "label": "Title"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Cus Product POP Full",
+        "blocks": [
+          {
+            "type": "column"
+          }, {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
