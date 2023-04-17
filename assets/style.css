@@ -1762,3 +1762,16 @@ ul.color-variation input:checked + label {
 #ContactForm textarea.field__input:focus {
   padding-top: 10px;
 }
+
+.image-with-text__heading {
+  font-size: 45px;
+  color: #000;
+  font-family: Lora;
+}
+.image-with-text__content {
+  padding-right: 0;
+}
+
+.image-with-text__text p {
+  font-size: 18px;
+}
