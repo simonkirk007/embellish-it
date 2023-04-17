@@ -51,7 +51,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/p-pro-img-1.png",
-            "title": "Place Your Title Here",
+            "title": "Place Your Title",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
             "product_url": ""
