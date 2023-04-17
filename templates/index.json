@@ -51,9 +51,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/p-pro-img-1.png",
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
             "product_url": ""
           }
         },
@@ -61,9 +61,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/p-pro-img-2.png",
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
             "product_url": ""
           }
         },
@@ -71,9 +71,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/p-pro-img-3.png",
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
             "product_url": ""
           }
         },
@@ -81,9 +81,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/p-pro-img-4.png",
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
+            "title": "Place Your Title Here",
+            "price_regular": "$6.90",
+            "price_sale": "$6.90",
             "product_url": ""
           }
         }
