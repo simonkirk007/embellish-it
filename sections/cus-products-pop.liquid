@@ -246,16 +246,51 @@
       "name": "Cus Product POP",
       "tag": "section",
       "class": "announcement-bar-section",
+      "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Collections",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "price_regular",
+            "default": "Collections",
+            "label": "Price Regular"
+          },
+          {
+            "type": "text",
+            "id": "price_sale",
+            "default": "Collections",
+            "label": "Price Sale"
+          },
+          {
+            "type": "url",
+            "id": "product_url",
+            "label": "Price Link"
+          }
+        ]
+          }
+        ],
       "settings": [
         {
-          "type": "text",
-          "id": "title",
-          "default": "Collections",
-          "label": "Title"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         },
         {
           "type": "collection",
-          "id": "collection",
+          "id": "title",
           "label": "t:sections.featured-collection.settings.collection.label"
         },
         {
