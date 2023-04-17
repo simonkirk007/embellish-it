@@ -136,8 +136,8 @@
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             
             <div class="shop-products">
-              <div data-id="{{ section.id }}" class="products">
-                <div id="product-grid" class="row">
+              <div class="products">
+                <div id="product-grid" data-id="{{ section.id }}" class="row">
                   
                 {%- for product in collection.products -%}
                   {% assign lazy_load = false %}
