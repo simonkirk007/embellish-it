@@ -1791,4 +1791,6 @@ summary.facets__summary {
   font-weight: 900;
 }
 
-
+.product-form__buttons {
+  max-width: 44rem;
+}
