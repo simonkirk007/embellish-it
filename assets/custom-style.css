@@ -62,3 +62,6 @@ section.newsletter form.newsletter-form {
     background: var(--c1) !important;
     border: 0.83px solid var(--c1) !important;
 }
+.product-form__buttons {
+    max-width: 240px !important;
+  }
