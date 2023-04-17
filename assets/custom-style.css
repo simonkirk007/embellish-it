@@ -65,3 +65,10 @@ section.newsletter form.newsletter-form {
 .product-form__buttons {
     max-width: 240px !important;
   }
+  .policy-content h2 {
+    font-size: 32px;
+}
+
+#returnpolicymodal h5#returnpolicymodalLabel {
+    font-size: 18px;
+}
