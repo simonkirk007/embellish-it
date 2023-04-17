@@ -25,7 +25,7 @@
   endif
 -%}
 
-<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
+<div class="filter-box{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
       <form
@@ -55,13 +55,7 @@
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
                   {%- unless results.filters == empty -%}
-                    <h2
-                      class="facets__heading facets__heading--vertical caption-large text-body"
-                      id="verticalTitle"
-                      tabindex="-1"
-                    >
-                      {{ 'products.facets.filter_by_label' | t }}
-                    </h2>
+                    <h3>FILTER BY PRICE</h3>
                   {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
                     <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
