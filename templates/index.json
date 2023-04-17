@@ -4,7 +4,10 @@
       "type": "cus-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/main-banner.png",
-        "title": "EMBELLISH RHINESTONES & HTV PATTERNS DESIGN"
+        "sub_title": "Welcome To",
+        "title": "EMBELLISH RHINESTONES & HTV PATTERNS DESIGN",
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all"
       }
     },
     "a4dc0cf1-43a2-46ef-9c84-530d20a4e94d": {
