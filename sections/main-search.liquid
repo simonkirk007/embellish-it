@@ -207,7 +207,7 @@
           {%- else -%}
             <div class="template-search__results collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="product-grid" data-id="{{ section.id }}">
               <div class="products">
-              <div class="product-grid" data-id="{{ section.id }}" class="row">
+              <div class="product-grid row" data-id="{{ section.id }}">
                 {%- for item in search.results -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
