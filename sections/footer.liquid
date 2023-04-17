@@ -14,6 +14,7 @@
       <div class="col-12 col-lg-4">
         <div class="footer-info">
           <a href="/" class="web-logo footer-info__logo ">
+
             {%- if settings.logo != blank -%}
               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
@@ -40,15 +41,17 @@
           </div>
         </div>
       </div>
+      {%- for block in section.blocks -%}
+
       <div class="col-12 col-lg-2 ">
         <div class="footer__nav">
           <h6 class="title">Quick Links</h6>
 
-          {%- if section.settings.menu_1 != blank -%}
-            {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+          {%- if block.settings.footer_menu != blank -%}
+            {%- if block.settings.menu_type_desktop == 'dropdown' -%}
 
               <ul>
-                {%- for link in section.settings.menu.links -%}
+                {%- for link in block.settings.menu.links -%}
                   <li>
                     <a href="{{link.url}}">{{ link.title | escape }}</a>
                   </li>
@@ -66,6 +69,8 @@
           </ul>
         </div>
       </div>
+  {%- endfor -%}
+
       <div class="col-12 col-lg-2 ">
         <div class="footer__nav">
           <h6 class="title">Useful Links</h6>
@@ -78,6 +83,7 @@
           </ul>
         </div>
       </div>
+
       <div class="col-12 col-lg-4">
         <div class="footer__nav">
           <h6 class="title">Newsletter</h6>
