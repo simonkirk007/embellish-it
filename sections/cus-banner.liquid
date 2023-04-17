@@ -4,12 +4,12 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-12">
                 <div class="banner-content">
-                    <h1>Welcome To </h1>
-                    <h2>EMBELLISH RHINESTONES & HTV PATTERNS DESIGN</h2>
+                    <h1>{{ section.settings.sub_title | escape }}</h1>
+                    <h2>{{ section.settings.title | escape }}</h2>
                     <!-- <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting text ever since the 1500s
                     </p> -->
-                    <a href="/collections/all" class="btn">Shop Now</a>
+                    <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_text | escape }}</a>
                 </div>
             </div>
 
@@ -30,9 +30,9 @@
         },
         {
           "type": "text",
-          "id": "sub_heading",
+          "id": "sub_title",
           "default": "Collections",
-          "label": "Sub Heading"
+          "label": "Sub Title"
         },
         {
           "type": "text",
@@ -41,11 +41,16 @@
           "label": "Title"
         },
         {
-          "type": "richtext",
-          "id": "content",
-          "default": "<p>Collections</p>",
-          "label": "Content"
-        }
+          "type": "text",
+          "id": "button_text",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
     ],
     "presets": [
         {
