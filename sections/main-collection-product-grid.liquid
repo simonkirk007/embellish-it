@@ -137,12 +137,12 @@
             
             <div class="shop-products">
               <div data-id="{{ section.id }}" class="products">
+                <div class="row">
                 {%- for product in collection.products -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
                   {%- endif -%}
-                  <div class="row">
                     {% render 'card-product',
                       card_product: product,
                       media_aspect_ratio: section.settings.image_ratio,
@@ -153,8 +153,8 @@
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
                     %}
-                  </div>
-                {%- endfor -%}
+                  {%- endfor -%}
+                </div>
               </div>
             </div>
 
