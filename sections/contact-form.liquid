@@ -50,6 +50,34 @@
                         <div class="col-md-6">
                           <input
                             class=""
+                            autocomplete="given-name"
+                            type="text"
+                            id="ContactForm-first-name"
+                            name="contact[first_name]"
+                            value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}"
+                            placeholder="First Name"
+                          >
+                          <label class="field__label" for="ContactForm-first-name">First Name</label>
+                        </div>
+
+                        <div class="col-md-6">
+                          <input
+                            class=""
+                            autocomplete="family-name"
+                            type="text"
+                            id="ContactForm-last-name"
+                            name="contact[last_name]"
+                            value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.last_name }}{% endif %}"
+                            placeholder="Last Name"
+                          >
+                          <label class="field__label" for="ContactForm-last-name">Last Name</label>
+                        </div>
+
+                        <!-- Value attribute example: John Smith -->
+
+                        <div class="col-md-6">
+                          <input
+                            class=""
                             autocomplete="name"
                             type="text"
                             id="ContactForm-name"
