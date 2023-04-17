@@ -5,8 +5,8 @@
                 <div class="news-content w-75 text-center m-auto">
                     <h2>{{ section.settings.title | escape }}</h2>
                     <h6>{{ section.settings.sub_heading }}</h6>
-
-                    <form action="" class="newsletter-form">
+{%- comment -%}
+. <form action="" class="newsletter-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" placeholder="Enter your first name">
@@ -20,6 +20,8 @@
                                 </div>
                             </div>
                     </form>
+{%- endcomment -%}
+                   
                     
 
                     {%- form 'customer', id: 'NewsSection', class: '' -%}
