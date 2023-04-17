@@ -136,9 +136,9 @@
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             
             <div class="shop-products">
-              <div data-id="{{ section.id }}" class="products">
-                <div class="row">
-                  
+              <div data-id="{{ section.id }}" class="row">
+                
+
                 {%- for product in collection.products -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
@@ -155,7 +155,7 @@
                       section_id: section.id
                     %}
                   {%- endfor -%}
-                </div>
+             
               </div>
             </div>
 
