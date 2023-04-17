@@ -166,43 +166,28 @@
 
 
 {% schema %}
-  {
-    "name": "t:sections.footer.name",
-    "blocks": [
-      {
-        "type": "@app"
-      },
-      {
-        "type": "link_list",
-        "name": "t:sections.footer.blocks.link_list.name",
-        "settings": [
-          {
-            "type": "inline_richtext",
-            "id": "heading",
-            "default": "Quick links",
-            "label": "t:sections.footer.blocks.link_list.settings.heading.label"
-          }, {
-            "type": "link_list",
-            "id": "menu",
-            "default": "footer",
-            "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-            "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-          }
-        ]
-      }
-      
-    ],
-    "settings": [
-
-    ],
-    "default": {
-      "blocks": [
-        {
-          "type": "link_list"
-        }, {
-          "type": "text"
-        }
-      ]
+{
+  "name": "t:sections.footer.name",
+  "class": "section-header",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu_2",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_1",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
     }
-  }
+    ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
 {% endschema %}
