@@ -42,28 +42,20 @@
         </div>
       </div>
       {%- for block in section.blocks -%}
-
-      <div class="col-12 col-lg-2 ">
-        <div class="footer__nav">
-          <h6 class="title">{{ block.settings.title | escape }}</h6>
-
-          {%- if block.settings.footer_menu != blank -%}
-            {%- if block.settings.menu_type_desktop == 'dropdown' -%}
-
+        <div class="col-12 col-lg-2 ">
+          <div class="footer__nav">
+            <h6 class="title">{{ block.settings.title | escape }}</h6>
+            {%- if block.settings.footer_menu != blank -%}
               <ul>
-                {%- for link in block.settings.menu.links -%}
-                  <li>
-                    <a href="{{link.url}}">{{ link.title | escape }}</a>
-                  </li>
+                {%- for link in linklists[block.settings.footer_menu].links -%}
+                  <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
                 {%- endfor -%}
               </ul>
             {%- endif -%}
-          {%- endif -%}
-
-        
+          </div>
         </div>
-      </div>
-  {%- endfor -%}
+      {%- endfor -%}
+      
 {%- comment -%}
 <div class="col-12 col-lg-2 ">
         <div class="footer__nav">
