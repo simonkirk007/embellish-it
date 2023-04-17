@@ -589,8 +589,9 @@
             </div>
             <div class="modal-body">
                 <div class="sizechart-img">
+                  {{ product.metafields.custom.size_chart | img_tag }}
                   {% if image_url %}
-  <img src="{{ image_url.url }}" alt="Size chart">
+  <img src="{{ image_url }}" alt="Size chart">
 {% endif %}
                     <img src="assets/images/sizechart.jpg" alt="">
                   
