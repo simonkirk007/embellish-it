@@ -69,7 +69,8 @@ section.newsletter form.newsletter-form {
     font-size: 32px;
 }
 
-#returnpolicymodal h5#returnpolicymodalLabel {
+#returnpolicymodal h5.modal-title,
+#sizechartmodal h5.modal-title {
     font-size: 18px;
 }
 
