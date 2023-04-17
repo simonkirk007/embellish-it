@@ -101,3 +101,6 @@ variant-radios legend::after, .product-form__quantity .form__label::after {
     content: ':';
     margin-left: 10px;
 }
+body.product {
+    padding: 0;
+}
