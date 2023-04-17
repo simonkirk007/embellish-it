@@ -22,7 +22,7 @@
                             </div>
                     </form>
                     
-                    {%- form 'customer', id: 'NewsSection', class: 'newsletter-form' -%}
+                    {%- form 'customer', id: 'NewsSection', class: '' -%}
                       <input
                         type="hidden"
                         name="contact[tags]"
@@ -83,7 +83,7 @@
                             Subscribe
                           </button>
                         </div>
-                        
+
                       </div>
                       {%- if form.errors -%}
                         <small class="newsletter-form__message form__message" id="ContactFooter-error">

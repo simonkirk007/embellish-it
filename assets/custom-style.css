@@ -104,3 +104,6 @@ variant-radios legend::after, .product-form__quantity .form__label::after {
 body.product {
     padding: 0;
 }
+.newsletter-form input::placeholder {
+    opacity: 1;
+}
