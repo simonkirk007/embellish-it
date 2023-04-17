@@ -18,7 +18,7 @@
               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
               <img src="{{ settings.logo | img_url: 'master' }}" alt="Logo" />
-              
+
             </a>
           {%- else -%}
             <span class="h2">{{ shop.name }}</span>
@@ -43,6 +43,21 @@
       <div class="col-12 col-lg-2 ">
         <div class="footer__nav">
           <h6 class="title">Quick Links</h6>
+
+          {%- if section.settings.menu != blank -%}
+            {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+
+              <ul>
+                {%- for link in section.settings.menu.links -%}
+                  <li>
+                    <ahref="{{link.url}}">{{ link.title | escape }}
+                    </ahref=>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          {%- endif -%}
+
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
