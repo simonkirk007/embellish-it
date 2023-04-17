@@ -56,3 +56,9 @@ section.newsletter form.newsletter-form {
     max-width: 100%;
     display: block;
 }
+
+.filter-box {
+    margin-bottom: 20px;
+    background: var(--c1) !important;
+    border: 0.83px solid var(--c1) !important;
+}
