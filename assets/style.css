@@ -1784,3 +1784,9 @@ ul.color-variation input:checked + label {
   max-width: 1320px;
   padding: 0 15px;
 }
+summary.facets__summary {
+  color: #000;
+  font-size: 18px;
+  margin: 12px 0;
+  font-weight: 900;
+}
