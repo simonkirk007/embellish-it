@@ -578,8 +578,8 @@
 </section>
 
 
-{% assign size_chart = product.metafields.custom.size_chart %}
-{% assign image_url = "" | img_url: size_chart %}
+{% assign image_url = product.metafields.custom.size_chart | img_url: 'master' %}
+
 <div class="modal fade" id="sizechartmodal" tabindex="-1" aria-labelledby="sizechartmodalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class=" modal-content">
@@ -589,10 +589,11 @@
             </div>
             <div class="modal-body">
                 <div class="sizechart-img">
-                  {% if size_chart %}
-                  <img src="{{ image_url }}" alt="Product image">
+                  {% if image_url %}
+  <img src="{{ image_url }}" alt="Size chart">
+{% endif %}
                     <img src="assets/images/sizechart.jpg" alt="">
-                  {% endif %}
+                  
                 </div>
             </div>
         </div>
