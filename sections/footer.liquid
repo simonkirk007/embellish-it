@@ -169,25 +169,39 @@
 {
   "name": "t:sections.footer.name",
   "class": "section-header",
-  "max_blocks": 3,
-  "settings": [
-    {
-      "type": "link_list",
-      "id": "menu_2",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
-    },
-    {
-      "type": "link_list",
-      "id": "menu_1",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
-    }
-    ],
+  "max_blocks": 2,
   "blocks": [
-    {
-      "type": "@app"
-    }
-  ]
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "default": "Collections",
+            "label": "Title"
+          },
+          {
+            "type": "link_list",
+            "id": "footer_menu",
+            "default": "main-menu",
+            "label": "Menu"
+          }
+          
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.footer.name",
+        "blocks": [
+          {
+            "type": "column"
+          }, {
+            "type": "column"
+          }
+        ]
+      }
+    ]
 }
 {% endschema %}
