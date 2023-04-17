@@ -2,33 +2,110 @@
   <div class="container">
     
     <div class="row">
-      {%- for block in section.blocks -%}
-        <div class="col-md-2">
-          <div class="product-item popular-pro">
-            <div class="product-inner-item">
-              <img src="{{ block.settings.image_product | img_url: 'master' }}" alt="">
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-5.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
             </div>
-            <div class="product-content">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-6.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
 
-              <h3>
-                <a href="{{ block.settings.product_url | escape }}">
-                  {{ block.settings.title | escape }}</a>
-              </h3>
-              <div class="inner-content">
-                <div class="rating">
-                  <div class="price">
-                    <h5>{{ block.settings.price_regular | escape }}</h5>
-                    <h6>{{ block.settings.price_sale | escape }}</h6>
-                  </div>
-
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
                 </div>
+              </div>
 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-7.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
                 </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-8.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+            <h3>
+              <a href="#">
+                Place Your Title Here</a>
+            </h3>
+            <div class="inner-content">
+              <div class="rating">
+                <div class="price">
+                  <h5>$6.90</h5>
+                  <h6>$6.90</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-item popular-pro">
+          <div class="product-inner-item">
+            <img src="{{ 'p-pro-img-9.png' | asset_url }}" alt="">
+          </div>
+          <div class="product-content">
+
+              </div>
             </div>
           </div>
         </div>
       {%- endfor -%}
-      
       
     </div>
   </div>
