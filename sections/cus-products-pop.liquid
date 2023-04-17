@@ -6,19 +6,21 @@
         <div class="row align-items-center">
             <div class="col-md-8">
                 <div class="row">
+
+                {%- for block in section.blocks -%}
                     <div class="col-md-3">
                         <div class="product-item popular-pro">
                             <div class="product-inner-item">
-                                <img src="{{ 'p-pro-img-1.png' | asset_url }}" alt="">
+                                <img src="{{ block.settings.title | | img_url: 'master' }}" alt="">
                             </div>
                             <div class="product-content">
 
-                                <h3><a href="#"> Place Your Title Here</a></h3>
+                                <h3><a href="{{ block.settings.product_url | escape }}"> {{ block.settings.title | escape }}</a></h3>
                                 <div class="inner-content">
                                     <div class="rating">
                                         <div class="price">
-                                            <h5>$6.90</h5>
-                                            <h6>$6.90</h6>
+                                            <h5>{{ block.settings.price_regular | escape }}</h5>
+                                            <h6>{{ block.settings.price_sale | escape }}</h6>
                                         </div>
 
                                     </div>
@@ -27,6 +29,8 @@
                             </div>
                         </div>
                     </div>
+                {%- endfor -%}
+      
 
                     <div class="col-md-3">
                         <div class="product-item popular-pro">
