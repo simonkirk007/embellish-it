@@ -7,6 +7,7 @@
                     </h2>
                     <h6>Start You’r Daily Shopping <span>With Us</span></h6>
 
+                    {%- comment -%}
                     <form action="" class="newsletter-form">
                         <div class="row">
                             <div class="col-md-6">
@@ -21,6 +22,8 @@
                                 </div>
                             </div>
                     </form>
+                  {%- endcomment -%}
+                    
                     
                     {%- form 'customer', id: 'NewsSection', class: '' -%}
                       <input
@@ -74,7 +77,7 @@
                         </div>
                         
                         <div class="col-md-12">
-                          
+
                           <div class="news-btn">
                             <button
                             type="submit"
