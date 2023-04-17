@@ -1769,7 +1769,7 @@ ul.color-variation input:checked + label {
   font-family: Lora;
 }
 .image-with-text__content {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
 .image-with-text__text p {
