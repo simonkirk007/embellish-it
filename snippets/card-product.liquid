@@ -16,9 +16,9 @@
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
+  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {% endcomment %}
 
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
