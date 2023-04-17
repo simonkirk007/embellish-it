@@ -72,3 +72,31 @@ section.newsletter form.newsletter-form {
 #returnpolicymodal h5#returnpolicymodalLabel {
     font-size: 18px;
 }
+
+.facets__disclosure-vertical {
+    border-top: unset !important;
+}
+
+body.product .price {
+    color: var(--c1);
+    font-weight: 600;
+    justify-content: flex-start;
+}
+
+body.product .price span {
+    font-size: 32px;
+}
+
+variant-radios legend, .product-form__quantity .form__label {
+    color: var(--c1);
+    font-size: 24px !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    font-family: "Lora";
+}
+
+variant-radios legend::after, .product-form__quantity .form__label::after {
+    content: ':';
+    margin-left: 10px;
+}
