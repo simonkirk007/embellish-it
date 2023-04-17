@@ -435,6 +435,8 @@
           {%- endcase -%}
         {%- endfor -%}
         <div class="product-other-links">
+{% assign image_url = product.metafields.custom.size_chart | img_url: 'master' %}
+
           {% if image_url %}
   <div class="link-item">
     <a href="" data-bs-toggle="modal" data-bs-target="#sizechartmodal"><i class="far fa-ruler-horizontal"></i> Size Chart</a>
