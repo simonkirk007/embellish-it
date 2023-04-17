@@ -7,7 +7,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="contact-item">
-                    <form class="contact">
+                  {%- comment -%}
+                  <form class="contact">
                         <div class="row">
                             <div class="col-md-6"><input type="text" placeholder="FIRST NAME:"></div>
                             <div class="col-md-6"><input type="text" placeholder="LAST NAME:"></div>
@@ -20,6 +21,8 @@
                             </div>
                         </div>
                     </form>
+                {%- endcomment -%}
+                    
                     {%- form 'contact', id: 'ContactForm', class: 'contact' -%}
                       {%- if form.posted_successfully? -%}
                         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
