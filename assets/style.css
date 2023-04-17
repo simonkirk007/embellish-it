@@ -1747,3 +1747,18 @@ ul.color-variation input:checked + label {
   /* font-weight: 700; */
   color: #000;
 }
+
+
+#ContactForm .field__input:focus {
+  margin-bottom: 27px;
+  padding: 0 10px;
+  outline-offset: .3rem;
+  box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 .5rem .4rem rgba(var(--color-foreground),.3);
+}
+#ContactForm .field__input::placeholder {
+  opacity: 0.5;
+}
+
+#ContactForm textarea.field__input:focus {
+  padding-top: 10px;
+}
