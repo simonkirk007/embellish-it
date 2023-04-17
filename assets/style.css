@@ -1790,3 +1790,7 @@ summary.facets__summary {
   margin: 12px 0;
   font-weight: 900;
 }
+
+.product-form__buttons {
+  max-width: 44rem;
+}

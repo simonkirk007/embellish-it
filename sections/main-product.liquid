@@ -434,6 +434,14 @@
               %}
           {%- endcase -%}
         {%- endfor -%}
+        <div class="product-other-links">
+                        <div class="link-item">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#sizechartmodal"><i class="far fa-ruler-horizontal"></i> Size Chart</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#returnpolicymodal">Return Policy <i class="fas fa-question-circle"></i> </a>
+                        </div>
+                    </div>
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
