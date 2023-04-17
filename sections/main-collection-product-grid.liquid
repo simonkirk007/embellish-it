@@ -140,6 +140,8 @@
                 <div id="product-grid" data-id="{{ section.id }}" class="row">
                   
                 {%- for product in collection.products -%}
+          <div class="col-md-4">
+
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
@@ -154,6 +156,7 @@
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
                     %}
+                    </div>
                   {%- endfor -%}
                 </div>
               </div>

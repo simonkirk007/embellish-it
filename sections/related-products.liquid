@@ -31,6 +31,7 @@
       >
       <div class="row">
         {% for recommendation in recommendations.products %}
+          <div class="col-md-3">
             {% render 'card-product',
               card_product: recommendation,
               media_aspect_ratio: section.settings.image_ratio,
@@ -38,6 +39,7 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating
             %}
+            </div>
           {% endfor %}
         </div>
       </div>
