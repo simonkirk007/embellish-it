@@ -78,13 +78,13 @@ section.newsletter form.newsletter-form {
     border-top: unset !important;
 }
 
-body.product .price {
+body.product .product__info-wrapper .price {
     color: var(--c1);
     font-weight: 600;
     justify-content: flex-start;
 }
 
-body.product .price span {
+body.product .product__info-wrapper .price span {
     font-size: 32px;
 }
 
