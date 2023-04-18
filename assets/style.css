@@ -1794,3 +1794,8 @@ summary.facets__summary {
 .product-form__buttons {
   max-width: 44rem;
 }
+
+.news-content {
+  position: relative;
+  z-index: 9;
+}
