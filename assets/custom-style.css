@@ -111,4 +111,11 @@ body.product {
     border-radius: 30px;
     padding: 18px 0;
 }
+
+.related-products  .title {
+  padding-top: 0;
+  margin-top: 0;
+}
 .related-products {
+  padding-top: 0;
+}
