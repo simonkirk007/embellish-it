@@ -126,3 +126,7 @@ body.product {
 .cart-item::before{
   display: none;
 }
+
+body.list-collections .list-collections-wrap {
+  padding: 50px 0px;
+}
