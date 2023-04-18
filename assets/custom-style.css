@@ -126,3 +126,6 @@ body.product {
 .cart-item::before{
   display: none;
 }
+.cart-items td.cart-item__media {
+  padding: 0;
+}
