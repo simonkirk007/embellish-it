@@ -57,7 +57,7 @@
                             value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}"
                             placeholder="First Name"
                           >
-                          <label class="field__label" for="ContactForm-first-name">First Name</label>
+                        
                         </div>
 
                         <div class="col-md-6">
@@ -70,7 +70,7 @@
                             value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.last_name }}{% endif %}"
                             placeholder="Last Name"
                           >
-                          <label class="field__label" for="ContactForm-last-name">Last Name</label>
+                        
                         </div>
 
                         <!-- Value attribute example: John Smith -->
@@ -106,10 +106,7 @@
                             {% endif %}
                             placeholder="{{ 'templates.contact.form.email' | t }}"
                           >
-                          <label class="field__label" for="ContactForm-email">
-                            {{- 'templates.contact.form.email' | t }}
-                            <span aria-hidden="true">*</span></label
-                          >
+                          
                           {%- if form.errors contains 'email' -%}
                             <small class="contact__field-error" id="ContactForm-email-error">
                               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
@@ -145,9 +142,7 @@
                         >
                           {{- form.body -}}
                         </textarea>
-                        <label class="form__label field__label" for="ContactForm-body">
-                          {{- 'templates.contact.form.comment' | t -}}
-                        </label>
+                    
                       </div>
                       <div class="col-md-12">
                         <button type="submit" class="btn-1 w-100 text-center">
