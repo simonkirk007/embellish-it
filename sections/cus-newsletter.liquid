@@ -30,28 +30,7 @@
                         name="contact[tags]"
                         value="newsletter">
                       <div class="row">
-
-                        <div class="col-md-6"> <!-- Add a new field for the customer's name -->
-                          <input
-                            id="Name--{{ section.id }}"
-                            type="text"
-                            name="contact[name]"
-                            class=""
-                            value="{{ form.name }}"
-                            aria-required="true"
-                            autocorrect="off"
-                            autocapitalize="off"
-                            autocomplete="name"
-                            {% if form.errors %}
-                            autofocus
-                            aria-invalid="true"
-                            aria-describedby="ContactFooter-error"
-                            {% endif %}
-                            placeholder="Your email address"
-                            required>
-
-                        </div>
-
+                        1
                         <div class="col-md-6">
                           <input
                             id="NewsletterForm--{{ section.id }}"
@@ -70,10 +49,33 @@
                             {% elsif form.posted_successfully? %}
                             aria-describedby="ContactFooter-success"
                             {% endif %}
-                            placeholder="Enter your first name"
+                            placeholder="Your Email Address"
                             required>
                    
                         </div>
+
+                        <div class="col-md-6"> <!-- Add a new field for the customer's name -->
+                          <input
+                            id="Name--{{ section.id }}"
+                            type="text"
+                            name="contact[name]"
+                            class=""
+                            value="{{ form.name }}"
+                            aria-required="true"
+                            autocorrect="off"
+                            autocapitalize="off"
+                            autocomplete="name"
+                            {% if form.errors %}
+                            autofocus
+                            aria-invalid="true"
+                            aria-describedby="ContactFooter-error"
+                            {% endif %}
+                            placeholder="Enter Your First Name "
+                            required>
+
+                        </div>
+
+                        
                         
                         <div class="col-md-12">
                           
