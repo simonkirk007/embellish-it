@@ -114,9 +114,10 @@
         "template--18614478274840__4d33a8da-3bea-4fa2-8d5f-6402cb4061f2-1681802578469cd495-1": {
           "type": "column",
           "settings": {
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
+            "image_product": "shopify:\/\/shop_images\/WarriorsGirl.jpg",
+            "title": "Warriors Girl High Heel",
+            "price_regular": "$24.99",
+            "price_sale": "",
             "product_url": ""
           }
         }
