@@ -147,3 +147,7 @@ body.list-collections .list-collections-wrap {
     padding-top: 0px;
     margin-top: 0px;
   }
+
+.popular-product .product-item .product-inner-item img {
+  height: 250px;
+}
