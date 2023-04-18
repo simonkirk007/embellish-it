@@ -46,6 +46,11 @@
           "settings": {
           }
         },
+        "cdb16c12-8c4e-4a7f-92c1-a67b152e851f": {
+          "type": "size-chart-with-return",
+          "settings": {
+          }
+        },
         "1be7d39c-3a58-4c4c-8a75-bcfbd320f699": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
@@ -60,6 +65,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "cdb16c12-8c4e-4a7f-92c1-a67b152e851f",
         "1be7d39c-3a58-4c4c-8a75-bcfbd320f699"
       ],
       "settings": {
