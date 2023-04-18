@@ -136,3 +136,8 @@ body.list-collections .list-collections-wrap {
   font-size: 21px;
   padding: 0 15px;
 }
+
+.popular-product-full {
+    padding-top: 0px;
+    margin-top: -60px;
+  }
