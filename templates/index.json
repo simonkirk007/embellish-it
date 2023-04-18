@@ -41,7 +41,6 @@
       "type": "cus-products-pop",
       "disabled": true,
       "settings": {
-        "title": "",
         "link_title": "Collections"
       }
     },
@@ -51,6 +50,7 @@
         "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-0": {
           "type": "column",
           "settings": {
+            "image_product": "shopify:\/\/shop_images\/p-pro-img-2.png",
             "title": "Place Your Title",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -92,7 +92,6 @@
         "22830e0a-b69f-4c40-8500-1403593ccc60"
       ],
       "settings": {
-        "title": "",
         "link_title": "Popular Products"
       }
     },
