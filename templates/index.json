@@ -80,9 +80,10 @@
         "22830e0a-b69f-4c40-8500-1403593ccc60": {
           "type": "column",
           "settings": {
-            "title": "Place Your Title Here",
-            "price_regular": "$6.90",
-            "price_sale": "$6.90",
+            "image_product": "shopify:\/\/shop_images\/Thou_Shall_Not_Try_Me.jpg",
+            "title": "Thou Shall Not Try Me.",
+            "price_regular": "$24.99",
+            "price_sale": "",
             "product_url": ""
           }
         }
@@ -103,9 +104,10 @@
         "template--18614478274840__4d33a8da-3bea-4fa2-8d5f-6402cb4061f2-1681802578469cd495-0": {
           "type": "column",
           "settings": {
-            "title": "asdf",
-            "price_regular": "asdf",
-            "price_sale": "adsad",
+            "image_product": "shopify:\/\/shop_images\/UnapologeticallyDopeBrownDrip-Topmo_e2615642-4424-4392-ab4f-a7adb2ac768d.jpg",
+            "title": "Unapologetically Dope - Multi Brown Glitter",
+            "price_regular": "$24.99",
+            "price_sale": "",
             "product_url": "#"
           }
         },
