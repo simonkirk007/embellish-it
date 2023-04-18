@@ -1,8 +1,21 @@
+<section class="breadcumb" style="background-image: url({{ 'inner-banner.png' | asset_url }});">
+    <div class="container">
+        <div class="breadcumb-con">
+         
+            <h2>All Collections</h2>
+        
+        </div>
+    </div>
+</section>
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width">
-  <h1 class="title title--primary inline-richtext">{{ section.settings.title }}</h1>
+
+
+
+<div class="page-width list-collections-wrap">
+ {% comment %} <h1 class="title title--primary inline-richtext">{{ section.settings.title }}</h1>{% endcomment %}
   {%- liquid
     case section.settings.sort
       when 'products_high', 'products_low'
@@ -39,6 +52,7 @@
     {% render 'pagination', paginate: paginate %}
   {%- endpaginate -%}
 </div>
+
 {% schema %}
 {
   "name": "t:sections.main-list-collections.name",

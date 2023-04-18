@@ -1,3 +1,13 @@
+<section class="breadcumb" style="background-image: url({{ 'inner-banner.png' | asset_url }});">
+    <div class="container">
+        <div class="breadcumb-con">
+         
+            <h2>Product Details</h2>
+        
+        </div>
+    </div>
+</section>
+
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -432,9 +442,8 @@
               {% render 'icon-with-text',
                 block: block
               %}
-          {%- endcase -%}
-        {%- endfor -%}
-        <div class="product-other-links">
+            {%- when 'size-chart-with-return' -%}
+            <div class="product-other-links">
 {% assign image_url = product.metafields.custom.size_chart | img_url: 'master' %}
 
           {% if image_url %}
@@ -446,6 +455,10 @@
                             <a href="" data-bs-toggle="modal" data-bs-target="#returnpolicymodal">Return Policy <i class="fas fa-question-circle"></i> </a>
                         </div>
                     </div>
+          {%- endcase -%}
+        {%- endfor -%}
+        
+                    
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
@@ -1361,6 +1374,10 @@
           "default": false
         }
       ]
+    },
+    {
+      "type": "size-chart-with-return",
+      "name": "Size Chart With Return"
     },
     {
       "type": "icon-with-text",

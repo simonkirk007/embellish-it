@@ -14,8 +14,8 @@
       "type": "cus-products",
       "settings": {
         "title": "FEATURED PRODUCTS",
-        "collection": "frontpage",
-        "link_title": "Collections",
+        "collection": "delta-sigma-theta-collection",
+        "link_title": "",
         "link_url": ""
       }
     },
@@ -39,8 +39,9 @@
     },
     "444cae8b-ff20-4067-aeb5-e7765076e1c9": {
       "type": "cus-products-pop",
+      "disabled": true,
       "settings": {
-        "title": "collections",
+        "title": "",
         "link_title": "Collections"
       }
     },
@@ -50,7 +51,6 @@
         "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-0": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-1.png",
             "title": "Place Your Title",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -60,7 +60,6 @@
         "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-1": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-2.png",
             "title": "Place Your Title Here",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -70,7 +69,6 @@
         "5af354d6-4d5f-42ad-ac72-a75ac6d99521": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-3.png",
             "title": "Place Your Title Here",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -80,7 +78,6 @@
         "22830e0a-b69f-4c40-8500-1403593ccc60": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-4.png",
             "title": "Place Your Title Here",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -99,51 +96,20 @@
         "link_title": "Popular Products"
       }
     },
-    "331f11a8-1593-4f87-9f55-36c3ae49b350": {
-      "type": "cus-products-pop",
-      "blocks": {
-        "template--18614478274840__331f11a8-1593-4f87-9f55-36c3ae49b350-1681728460b5d5357f-0": {
-          "type": "column",
-          "settings": {
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
-            "product_url": ""
-          }
-        },
-        "template--18614478274840__331f11a8-1593-4f87-9f55-36c3ae49b350-1681728460b5d5357f-1": {
-          "type": "column",
-          "settings": {
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
-            "product_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18614478274840__331f11a8-1593-4f87-9f55-36c3ae49b350-1681728460b5d5357f-0",
-        "template--18614478274840__331f11a8-1593-4f87-9f55-36c3ae49b350-1681728460b5d5357f-1"
-      ],
-      "settings": {
-        "title": "",
-        "link_title": ""
-      }
-    },
-    "63a96d71-78da-4b47-bce4-4e4996129695": {
+    "4d33a8da-3bea-4fa2-8d5f-6402cb4061f2": {
       "type": "cus-products-pop-full",
       "blocks": {
-        "template--18614478274840__63a96d71-78da-4b47-bce4-4e4996129695-1681728742a0d2d6e8-0": {
+        "template--18614478274840__4d33a8da-3bea-4fa2-8d5f-6402cb4061f2-1681802578469cd495-0": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-4.png",
-            "title": "Collections",
-            "price_regular": "Collections",
-            "price_sale": "Collections",
-            "product_url": ""
+            "image_product": "shopify:\/\/shop_images\/p-pro-img-1.png",
+            "title": "asdf",
+            "price_regular": "asdf",
+            "price_sale": "adsad",
+            "product_url": "#"
           }
         },
-        "template--18614478274840__63a96d71-78da-4b47-bce4-4e4996129695-1681728742a0d2d6e8-1": {
+        "template--18614478274840__4d33a8da-3bea-4fa2-8d5f-6402cb4061f2-1681802578469cd495-1": {
           "type": "column",
           "settings": {
             "title": "Collections",
@@ -154,8 +120,8 @@
         }
       },
       "block_order": [
-        "template--18614478274840__63a96d71-78da-4b47-bce4-4e4996129695-1681728742a0d2d6e8-0",
-        "template--18614478274840__63a96d71-78da-4b47-bce4-4e4996129695-1681728742a0d2d6e8-1"
+        "template--18614478274840__4d33a8da-3bea-4fa2-8d5f-6402cb4061f2-1681802578469cd495-0",
+        "template--18614478274840__4d33a8da-3bea-4fa2-8d5f-6402cb4061f2-1681802578469cd495-1"
       ],
       "settings": {
         "link_title": "Collections"
@@ -169,7 +135,6 @@
     "9e7c61af-90f6-4d92-aefe-5ee00f453506",
     "444cae8b-ff20-4067-aeb5-e7765076e1c9",
     "314ae5f8-e007-4cf2-a713-3da73adb98db",
-    "331f11a8-1593-4f87-9f55-36c3ae49b350",
-    "63a96d71-78da-4b47-bce4-4e4996129695"
+    "4d33a8da-3bea-4fa2-8d5f-6402cb4061f2"
   ]
 }
