@@ -14,16 +14,14 @@
       "type": "cus-products",
       "settings": {
         "title": "FEATURED PRODUCTS",
-        "collection": "frontpage",
-        "link_title": "Collections",
+        "collection": "delta-sigma-theta-collection",
+        "link_title": "",
         "link_url": ""
       }
     },
     "f2ef5218-cf24-4c00-8d72-53c845898069": {
       "type": "cus-newsletter",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/news-img-2.png",
-        "image_2": "shopify:\/\/shop_images\/news-img-1.png",
         "title": "Multi-layered designs made with the highest quality machine cut rhinestones and HTV patterns",
         "sub_heading": "Start You’r Daily Shopping <span>With Us<\/span>"
       }
@@ -41,7 +39,6 @@
       "type": "cus-products-pop",
       "disabled": true,
       "settings": {
-        "title": "collections",
         "link_title": "Collections"
       }
     },
@@ -51,7 +48,6 @@
         "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-0": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-1.png",
             "title": "Place Your Title",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -61,7 +57,6 @@
         "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-1": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-2.png",
             "title": "Place Your Title Here",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -71,7 +66,6 @@
         "5af354d6-4d5f-42ad-ac72-a75ac6d99521": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-3.png",
             "title": "Place Your Title Here",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -81,7 +75,6 @@
         "22830e0a-b69f-4c40-8500-1403593ccc60": {
           "type": "column",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/p-pro-img-4.png",
             "title": "Place Your Title Here",
             "price_regular": "$6.90",
             "price_sale": "$6.90",
@@ -96,7 +89,6 @@
         "22830e0a-b69f-4c40-8500-1403593ccc60"
       ],
       "settings": {
-        "title": "",
         "link_title": "Popular Products"
       }
     }
