@@ -130,3 +130,9 @@ body.product {
 body.list-collections .list-collections-wrap {
   padding: 50px 0px;
 }
+.card__heading a {
+  font-family: lora;
+  color: #000;
+  font-size: 21px;
+  padding: 0 15px;
+}
