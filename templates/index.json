@@ -22,6 +22,8 @@
     "f2ef5218-cf24-4c00-8d72-53c845898069": {
       "type": "cus-newsletter",
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/news-img-2.png",
+        "image_2": "shopify:\/\/shop_images\/news-img-1.png",
         "title": "Multi-layered designs made with the highest quality machine cut rhinestones and HTV patterns",
         "sub_heading": "Start You’r Daily Shopping <span>With Us<\/span>"
       }
