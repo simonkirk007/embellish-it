@@ -136,8 +136,14 @@ body.list-collections .list-collections-wrap {
   font-size: 21px;
   padding: 0 15px;
 }
+.popular-product.popular-product-full{
+    padding-bottom: 70px;
+}
 
+.popular-product {
+    padding-bottom: 0;
+}
 .popular-product-full {
     padding-top: 0px;
-    margin-top: -60px;
+    margin-top: 0px;
   }
