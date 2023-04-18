@@ -119,3 +119,7 @@ body.product {
 .related-products {
   padding-top: 0;
 }
+
+.quantity .quantity__button {
+  height: 30px;
+}
