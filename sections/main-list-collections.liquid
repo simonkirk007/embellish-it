@@ -11,11 +11,11 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
-{% comment %}
+
 
 
 <div class="page-width">
-  <h1 class="title title--primary inline-richtext">{{ section.settings.title }}</h1>
+ {% comment %} <h1 class="title title--primary inline-richtext">{{ section.settings.title }}</h1>{% endcomment %}
   {%- liquid
     case section.settings.sort
       when 'products_high', 'products_low'
@@ -52,7 +52,6 @@
     {% render 'pagination', paginate: paginate %}
   {%- endpaginate -%}
 </div>
-{% endcomment %}
 
 {% schema %}
 {
