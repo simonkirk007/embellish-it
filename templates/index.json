@@ -60,18 +60,20 @@
         "template--18614478274840__314ae5f8-e007-4cf2-a713-3da73adb98db-1681727848284e1d84-1": {
           "type": "column",
           "settings": {
-            "title": "Place Your Title Here",
-            "price_regular": "$6.90",
-            "price_sale": "$6.90",
+            "image_product": "shopify:\/\/shop_images\/BirthdayQueenDrip-TopMo.jpg",
+            "title": "The Birthday Queen Drip",
+            "price_regular": "$22.95",
+            "price_sale": "",
             "product_url": ""
           }
         },
         "5af354d6-4d5f-42ad-ac72-a75ac6d99521": {
           "type": "column",
           "settings": {
-            "title": "Place Your Title Here",
-            "price_regular": "$6.90",
-            "price_sale": "$6.90",
+            "image_product": "shopify:\/\/shop_images\/TheyHateUsCauseThyAintUs-Cowboys_CS.jpg",
+            "title": "They Hate Us Because They Ain't Us",
+            "price_regular": "$24.99",
+            "price_sale": "",
             "product_url": ""
           }
         },
