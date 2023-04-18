@@ -32,8 +32,8 @@
       "type": "cus-products",
       "settings": {
         "title": "BEST SELLING PRODUCTS",
-        "collection": "frontpage",
-        "link_title": "Collections",
+        "collection": "delta-sigma-theta-collection",
+        "link_title": "",
         "link_url": ""
       }
     },
