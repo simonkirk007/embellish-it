@@ -123,3 +123,6 @@ body.product {
 .quantity .quantity__button {
   height: 30px;
 }
+.cart-item::before{
+  display: none;
+}
