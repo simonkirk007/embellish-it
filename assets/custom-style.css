@@ -99,7 +99,7 @@ variant-radios legend, .product-form__quantity .form__label {
 
 variant-radios legend::after, .product-form__quantity .form__label::after {
     content: ':';
-    margin-left: 10px;
+    margin-left: 0px;
 }
 body.product {
     padding: 0;
